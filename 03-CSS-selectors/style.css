@@ -1,0 +1,73 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+
+}
+.big {
+    color: white;
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 5px solid red;
+}
+.big{
+    background-color: antiquewhite;
+    background-image: url(./NMRC6954.JPG);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+.folder{
+    color: white;
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 5px solid red;
+ 
+}
+.folder {
+    background: url(./VEOT5213.JPG);
+    background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 40rem;
+
+border: 5px solid red;
+}
+.small {
+    color: white;
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 5px solid red;
+}
+.small {
+    background-color: antiquewhite;
+    background-image: url(./NMRC6954.JPG);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+
+}
+.gradient {
+    color: white;
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+}
+.gradient {
+    background-image: linear-gradient(to left, yellow,  green, blue);
+    background-attachment: fixed;
+    background-size: cover;
+    height: 100vh;
+    border: 5px solid red;
+}
