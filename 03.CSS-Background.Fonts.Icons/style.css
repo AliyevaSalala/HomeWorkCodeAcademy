@@ -101,8 +101,8 @@ button {
   color: gray;
 }
 .footer-col ul li:hover a {
-  color: gray;
-  padding-left: 10px;
+  color: white;
+  
 }
 .footer-col .social-links a {
   color: gray;
