@@ -1,0 +1,113 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+.container {
+  max-width: 1500px;
+}
+.header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.header nav ul {
+  display: flex;
+}
+.header nav ul li,
+.header .icons i {
+  margin: 0px 20px;
+}
+.header .icons i {
+  color: blue;
+}
+.header nav ul li:hover a {
+  background-color: pink;
+  border-radius: 5px;
+}
+
+img {
+  width: 5%;
+}
+.section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+section {
+  height: 100vh;
+  background-image: url(./img.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.frontend{
+    position: absolute;
+    left: 3%;
+    width: 40%;
+}
+
+.frontend h1 {
+    margin-bottom: 20px;
+  font-size: 36px;
+  text-shadow: 5px 5px 10px orange;
+  font-family: "Tilt Neon", cursive;
+}
+button {
+  color: blueviolet;
+  margin-top: 15px;
+  padding: 10px 15px;
+  border: 1px solid black;
+  cursor: pointer;
+}
+#submit:hover {
+  color: black;
+  border: none;
+  background-color: rgb(117, 182, 182);
+}
+.section2 {
+  height: 100vh;
+  background-image: url(./walp1.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.footer {
+  background-color: rgb(30, 28, 28);
+  padding: 70px;
+}
+.row {
+  display: flex;
+}
+.footer-col {
+  width: 25%;
+  padding: 0px 50px;
+}
+.footer-col h4 {
+  font-size: 20px;
+  color: white;
+  margin-bottom: 30px;
+}
+.footer-col ul li {
+  margin-bottom: 10px;
+}
+.footer-col ul li a {
+  font-size: 20px;
+  color: gray;
+}
+.footer-col ul li:hover a {
+  color: gray;
+  padding-left: 10px;
+}
+.footer-col .social-links a {
+  color: gray;
+  margin: 0px 10px;
+}
+.footer-col .social-links:hover a {
+  color: white;
+}
