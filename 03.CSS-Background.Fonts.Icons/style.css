@@ -16,15 +16,26 @@
 .header nav ul {
   display: flex;
 }
-.header nav ul li,
-.header .icons i {
-  margin: 0px 20px;
+.header nav ul li a {
+  padding: 10px;
 }
-.header .icons i {
+.header nav ul li,
+.header .icons ul li a i {
+  margin: 0px 30px;
+}
+.icons ul {
+  display: flex;
   color: blue;
 }
+.icons ul li a i{
+  padding: 10px;
+}
 .header nav ul li:hover a {
-  background-color: pink;
+  background-color: peachpuff;
+  border-radius: 5px;
+}
+.icons ul li a i:hover{
+  background-color: peachpuff;
   border-radius: 5px;
 }
 
@@ -44,14 +55,14 @@ section {
   background-size: cover;
   background-attachment: fixed;
 }
-.frontend{
-    position: absolute;
-    left: 3%;
-    width: 40%;
+.frontend {
+  position: absolute;
+  left: 3%;
+  width: 40%;
 }
 
 .frontend h1 {
-    margin-bottom: 20px;
+  margin-bottom: 20px;
   font-size: 36px;
   text-shadow: 5px 5px 10px orange;
   font-family: "Tilt Neon", cursive;
@@ -102,7 +113,6 @@ button {
 }
 .footer-col ul li:hover a {
   color: white;
-  
 }
 .footer-col .social-links a {
   color: gray;
