@@ -74,7 +74,7 @@ button {
   border: 1px solid black;
   cursor: pointer;
 }
-#submit:hover {
+button:hover {
   color: black;
   border: none;
   background-color: rgb(117, 182, 182);
