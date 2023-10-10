@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  list-style: none;
+}
+body{
+    height: 100vh;
+}
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header nav ul {
+    display: flex;
+  }
+  header nav ul li  {
+    padding: 30px;
+  }
+  .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  img{
+    width: 30%;
+  }
+  .foto{
+display: flex;
+justify-content: center;
+align-items: center;
+flex-wrap: wrap;
+  }
+.image{
+    
+    background-color: rgb(175, 112, 112);
+}
