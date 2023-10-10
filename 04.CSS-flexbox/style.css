@@ -2,11 +2,10 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    text-decoration: none;
   list-style: none;
 }
-body{
-    height: 100vh;
-}
+
 header{
     display: flex;
     justify-content: center;
@@ -18,21 +17,38 @@ header nav ul {
   header nav ul li  {
     padding: 30px;
   }
-  .container{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  img{
-    width: 30%;
-  }
-  .foto{
-display: flex;
-justify-content: center;
-align-items: center;
-flex-wrap: wrap;
-  }
-.image{
-    
-    background-color: rgb(175, 112, 112);
+.container .game{
+  display: flex;
+  justify-content: space-between;
+
+}
+.container .game .shoes{
+  display: flex;
+  align-items: center;
+}
+.foto{
+  display: flex;
+  flex-wrap: wrap;
+  width: 80%;
+}
+.foto .fake{
+  width: 25%;
+  height: 30vh;
+  margin: 3%;
+}
+.foto .fake .shoes-type{
+  padding-right: 30px;
+  padding-left: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+.foto .fake .image{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.shoess{
+  color: gray;
+  padding-right: 30px;
+  padding-left: 30px;
 }
