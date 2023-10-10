@@ -3,24 +3,20 @@
     padding: 0;
     box-sizing: border-box;
 }
-body{
-   
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+h1{
+    text-align: center;
 }
 .container{
-    width: 100%;
+    padding: 20px;
     border: 2px solid;
 }
-.boxes{
+.container .boxes{
     display: flex;
     margin: 10px;
     column-gap: 30px;
   
 }
-.boxes .box{
+.container .boxes .box{
     width: 100%;
     height: 15vh;
     background-color: aqua;
@@ -28,5 +24,16 @@ body{
     justify-content: center;
     align-items: center;
     color: black;
-
+}
+.container .boxes .box:nth-child(2){
+    background-color: blueviolet;
+}
+.container .boxes .box:nth-child(3){
+    background-color: orange;
+}
+.container .boxes .box:nth-child(4){
+    background-color: greenyellow;
+}
+.container .boxes .box:nth-child(5){
+    background-color: green;
 }
