@@ -196,3 +196,12 @@ footer{
     text-align: center;
     color: gray;
 }
+.servis .line2{
+    border: 2px solid orange;
+    width: 40%;
+}
+.develop .line3{
+    margin-left: 20px;
+    border: 2px solid orange;
+    width: 30%;
+}
