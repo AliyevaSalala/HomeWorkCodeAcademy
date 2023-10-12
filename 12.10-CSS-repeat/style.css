@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+.top{
+    padding: 30px 10px;
+    background-color: purple;
+    color: white;
+}
+.bottom{
+    padding: 20px;
+    background-color: black;
+}
+.bottom nav ul{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.bottom nav ul li a{
+    color: white;
+}
+.bolum{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.solbolum {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px ;
+}
