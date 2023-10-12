@@ -11,18 +11,22 @@
 }
 header{
     background-color: bisque;
-    /* position: fixed;
+    position: fixed;
     top: 0;
     left: 0;
-    width: 100%;
-    z-index: 1; */
+    z-index: 1;
 }
 header .header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /* padding: 40px; */
     height: 80px;
+}
+.social-icons i:hover{
+    color: orange;
+}
+.social-icons i{
+    cursor: pointer;
 }
 header .header nav ul{
     display: flex;
@@ -33,13 +37,11 @@ header .header nav ul{
     padding: 10px;
 }
 .header nav ul li a:hover{
-     color: white;
-     background-color: coral;
+     color: orange;
      border-radius: 20px;
 }
 #hero-banner{
     background-color: bisque;
-    /* margin-top: 80px; */
 }
 #hero-banner .hero-banner{
     display:flex ;
@@ -56,9 +58,6 @@ header .header nav ul{
     position: relative;
     bottom: 30px;
     right: 30px;
-    /* top: -20px;
-    left: -20px; */
-    
 }
 #hero-banner .hero-banner .hero-banner-img .border{
     width: 50%;
@@ -100,9 +99,6 @@ header .header nav ul{
     display: flex;
     column-gap: 30px;
 }
-/* #about{
-    background-color: bisque;
-} */
 #about .about{
     display:flex ;
     align-items: center;
@@ -118,6 +114,10 @@ header .header nav ul{
     position: relative;
     bottom: 20px;
     left: 20px;
+}
+.about1 p{
+    color: blue;
+    font-family: 'Roboto', sans-serif;
 }
 #about .about .about-img .border2{
     width: 50%;
@@ -166,8 +166,43 @@ header .header nav ul{
     justify-content: center;
     align-items: center;
 }
+#contact{
+    background-color: bisque;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#contact .email{
+    font-size: 36px;
+    padding-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#contact .lorem{
+    padding-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.lorem p{
+    padding: 10px;
+    font-family: 'Roboto', sans-serif;
+
+}
+.lorem a{
+    color: orange;
+}
+.email .line4{
+    border: 2px solid orange;
+    width: 40px;
+}
+
+
 .design{
-    /* margin: 50px; */
     padding: 50px 0;
     width: 100%;
     gap: 30px;
@@ -175,7 +210,6 @@ header .header nav ul{
     justify-content: center;
     align-items: center;
 }
-
 .design .web{
     text-align: center;
     padding: 30px;
@@ -186,11 +220,9 @@ header .header nav ul{
     padding: 30px;
 }
 footer{
-    /* height: 15vh; */
     background-color: black;
 }
 .icons{
-    /* margin: 30px; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -209,13 +241,10 @@ footer{
     width: 40px;
 }
 .develop .line3{
-    /* margin-left: 20px; */
     border: 2px solid orange;
-    width: 40px;
-    
+    width: 40px;  
 }
 .develop {
-
     display: flex;
     flex-direction: column;
     justify-content: center;
