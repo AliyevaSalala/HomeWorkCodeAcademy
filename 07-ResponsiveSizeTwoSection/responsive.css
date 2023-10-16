@@ -1,0 +1,101 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Grand Hotel', cursive;
+}
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+#section{
+    background-color: rgb(155, 213, 213);
+}
+.check-out{
+    display: flex;
+  width: 100%;
+  padding: 40px;
+}
+.top{
+   column-gap: 20px;
+    display: flex;
+    /* width: 50%; */
+}
+.bottom{
+    display: flex;
+    /* width: 50%; */
+}
+.image img{
+    margin-bottom: 20px;
+    border-radius: 10px;
+    width: 80%;
+}
+.image p{
+    color: green;
+    padding: 10px;
+}
+.products h2{
+    color: green;
+   padding: 5px;
+}
+.products h1{
+    color: black;
+    padding-bottom: 10px;
+}
+button{
+    margin-top: 10px;
+    width: 200px;
+    padding: 5px;
+    background-color: green;
+    color: white;
+}
+/* Section Team */
+.content{
+    text-align: center;
+    margin: 20px;
+}
+.content h2{
+    color: green;
+    margin: 10px;
+}
+
+.content-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.content-section .card{
+    border-radius: 10px;
+    padding: 20px;
+    flex: 1;
+    margin: 20px 20px;
+    box-shadow: 0px 3px 8px rgb(155, 213, 213);
+    background-color:  rgb(155, 213, 213);
+}
+.card img{
+    width: 100%;
+   /* column-gap: 10px; */
+}
+
+@media screen and (max-width:1023px){
+    .check-out{
+        flex-direction: column;
+    }
+}
+@media screen and (max-width:767px){
+    .top{
+        flex-direction: column;
+    }
+    .bottom{
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width:1023px){
+    .content-section{
+        flex-direction: column;
+    }
+}
