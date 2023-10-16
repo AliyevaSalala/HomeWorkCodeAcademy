@@ -9,19 +9,19 @@
     <form action="">
       <h2>Subscription Form</h2>
       <label for="name">Name:</label>
-      <input type="text" name="flname" id="name" size="30" />
+      <input type="text" name="flname" id="name" size="30"  required/>
       <br />
       <label for="adress">Adress:</label>
-      <input type="text" name="address" id="adress" size="30" />
+      <input type="text" name="address" id="adress" size="30"  required/>
       <br />
       <label for="city">City:</label>
-      <input type="text" name="sehir" id="city" size="30" />
+      <input type="text" name="sehir" id="city" size="30"  required/>
       <br />
       <label for="state">State:</label>
-      <input type="text" name="name" id="state"  size="30"/>
+      <input type="text" name="name" id="state"  size="30" required/>
       <br />
       <label for="zip">Zip:</label>
-      <input type="text" name="name" id="zip" size="30" />
+      <input type="text" name="name" id="zip" size="30"  required/>
       <br />
       <label for="magazine">Magazine</label>
       <select name="newspaper" id="magazine">
@@ -30,14 +30,15 @@
         <option>Tuesday</option>
       </select>
       <br />
-      <label for="1">Subscription:</label>
-      <input type="radio" name="radio" id="1" /> 1 years
-      <input type="radio" name="radio" id="" /> 2 years
+      <span>Subcription</span>
+      <input type="radio" name="radio" id="year" /> 
+      <label for="year">1 years</label>
+      <input type="radio" name="radio" id="years2" /> 
+      <label for="years2">2 years</label>
       <br />
       <label for="comment">Additional Comment:</label>
       <br />
-      <textarea name="comment" id="comment" cols="30" rows="6">
- input type</textarea
+      <textarea name="comment" id="comment" cols="30" rows="6" placeholder="input"></textarea
       >
       <br />
       <input type="submit" value="Send Your Order" />
@@ -51,11 +52,11 @@
       <input type="checkbox" name="js" id="js" />
       <label for="js">A) Vue.js</label>
       <br />
-      <input type="checkbox" name="js" id="js" />
-      <label for="js">B) Read.js</label>
+      <input type="checkbox" name="js" id="react" />
+      <label for="react">B) React.js</label>
       <br />
-      <input type="checkbox" name="js" id="js" />
-      <label for="js">C) Node.js</label>
+      <input type="checkbox" name="js" id="node" />
+      <label for="node">C) Node.js</label>
       <br />
       <input type="checkbox" name="js" id="angular" />
       <label for="angular">D) Angular</label>
@@ -91,10 +92,10 @@
       <input type="submit" value="Add user" />
       <hr />
       <h2>Contact me</h2>
-      <a href="#">Phone:0557962607</a>
+      <a href="tel:">Phone:0557962607</a>
       <br />
       <br />
-      <a href="#">Email:selale28@gmail.com</a>
+      <a href="mailto:selale28@gmail.com">Email:selale28@gmail.com</a>
     </form>
   </body>
 </html>
