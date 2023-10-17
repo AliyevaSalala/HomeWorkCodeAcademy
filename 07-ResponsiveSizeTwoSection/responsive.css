@@ -7,8 +7,12 @@
 .container{
     max-width: 1200px;
     margin: 0 auto;
+}
+.check-out{
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    padding: 30px;
 }
 #section{
     background-color: rgb(155, 213, 213);
@@ -21,11 +25,11 @@
 .top{
    column-gap: 20px;
     display: flex;
-    /* width: 50%; */
+ 
 }
 .bottom{
     display: flex;
-    /* width: 50%; */
+
 }
 .image img{
     margin-bottom: 20px;
@@ -44,12 +48,17 @@
     color: black;
     padding-bottom: 10px;
 }
-button{
+.products button{
     margin-top: 10px;
     width: 200px;
     padding: 5px;
     background-color: green;
     color: white;
+    border: none;
+}
+.products button:hover{
+    background-color: gold;
+    cursor: pointer;
 }
 /* Section Team */
 .content{
@@ -60,6 +69,18 @@ button{
     color: green;
     margin: 10px;
 }
+.boxes{
+    position: relative;
+}
+.content-section i{
+    background-color: greenyellow;
+    border: 4px solid wheat;
+    padding: 10px;
+    border-radius: 50%;
+    /* position: absolute;
+    top: 0;
+    left: 50%; */
+}
 
 .content-section{
     display: flex;
@@ -68,16 +89,24 @@ button{
     text-align: center;
 }
 .content-section .card{
-    border-radius: 10px;
+    border-radius: 2px;
     padding: 20px;
     flex: 1;
     margin: 20px 20px;
     box-shadow: 0px 3px 8px rgb(155, 213, 213);
-    background-color:  rgb(155, 213, 213);
+    /* background-color:  rgb(155, 213, 213); */
 }
 .card img{
     width: 100%;
    /* column-gap: 10px; */
+}
+.card button{
+    margin: 20px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    background-color: green;
+    color: white;
+
 }
 
 @media screen and (max-width:1023px){
