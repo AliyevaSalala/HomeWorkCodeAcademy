@@ -16,7 +16,7 @@
   border-radius: 5px;
 }
 .box {
-  background-color: rgb(208, 242, 242);
+  background-color: rgb(218, 237, 237);
   padding: 30px;
   transition: 1s;
   width: 50%;
@@ -64,18 +64,46 @@
 .bottom {
   width: 50%;
 }
-.top {
-  transition: all 1s;
+/* .top {
   width: 50%;
   border: 5px solid green;
-  z-index: 1;
-}
-.top img {
+} */
+/* .top img {
+  transition: all 2s;
   width: 100%;
   height: 100%;
+} */
+/* .top{
+  overflow: hidden;
+} */
+/* .top img:hover {
+  transform: scale(1.2);
+  opacity: 0.8;
+} */
+.img-tea {
+  width: 50%;
+  height: 350px;
+  border: 1px solid black;
+  overflow: hidden;
+  position: relative;
+  border: 8px solid green;
 }
-.top:hover {
-  transform: scale(1.1);
+.img-tea .img {
+  width: 100%;
+  height: 100%;
+  background-image: url("./image/WhatsApp\ Image\ 2023-10-20\ at\ 21.28.09.jpeg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  transition: all 1s;
+}
+.img-tea .img:hover {
+  transform: scale(1.2);
+  background-image: linear-gradient(
+      to bottom,
+      rgba(103, 142, 63, 0.5), rgba(88, 139, 88, 0.486)
+    ),
+    url("../21.10.CSS-Transform-Task/image/WhatsApp\ Image\ 2023-10-20\ at\ 21.28.09.jpeg");
 }
 .bottom {
   line-height: 2;
@@ -89,6 +117,7 @@
   color: gray;
 }
 .bottom button {
+  transition: all 1s;
   margin-top: 10px;
   width: 200px;
   padding: 10px;
@@ -164,107 +193,134 @@
 }
 
 /* SECTION FOUR */
-.content{
+.content {
   text-align: center;
   margin: 20px;
 }
-.content h2{
+.content h2 {
   color: green;
   margin: 10px;
 }
-.content-section-2{
+.content-section-2 {
   display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 20px;
   text-align: center;
+  padding: 50px 0;
 }
-.boxes-2{
+.boxes-2 {
   position: relative;
 }
-.content-section-2 i{
+.content-section-2 i {
   background-color: greenyellow;
   border: 4px solid wheat;
   padding: 10px;
   border-radius: 50%;
   position: absolute;
-  bottom: 0;
+  bottom: -7px;
   left: 45%;
 }
 
-.content-section-2 .card{
+.content-section-2 .card {
   border-radius: 2px;
-  padding: 50px;
+  padding-bottom: 50px;
 }
-.custom{
+.custom {
+  padding: 20px;
+}
+.card {
+  transition: all 1s;
+  width: 30%;
   background-color: rgb(193, 235, 235);
 }
-.card img{
- width: 100%;
- column-gap: 10px;
+.card img {
+  width: 100%;
+  height: 100%;
 }
-.card button{
-  margin: 20px;
+.card:hover {
+  transform: scale(1.1);
+}
+.boxes-2 {
+  height: 250px;
+}
+.card h2 {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+.card p {
+  color: gray;
+  font-size: 26px;
+  padding: 10px;
+}
+.card button {
+  margin-top: 50px;
   padding: 5px 10px;
   border-radius: 5px;
   background-color: green;
   color: white;
-
 }
-@media screen and (max-width:1023px){
-  .content-section-2{
-      flex-direction: column;
-      align-items: center;
-  }
-  .content-section-2 .card{
+@media screen and (max-width: 1023px) {
+  .content-section-2 {
+    flex-direction: column;
     align-items: center;
-  width: 50%;
+    row-gap: 20px;
+  }
+  .content-section-2 .card {
+    align-items: center;
+    width: 50%;
   }
 }
 
 /* SECTION FIVE */
-#section-five{
+#section-five {
   background-color: rgb(199, 227, 227);
 }
-.form-input{
+.form-input {
   display: flex;
   padding: 80px;
 }
-.left-1, .right-1{
+.left-1,
+.right-1 {
   width: 50%;
 }
 
-.left-1 i, .left-1 span{
+.left-1 i,
+.left-1 span {
   color: green;
   font-size: 26px;
   padding: 10px;
 }
-.address{
+.address {
   width: 50%;
   line-height: 2;
 }
-.right-1 .form h2{
+.right-1 .form h2 {
   text-align: center;
   margin-bottom: 20px;
 }
 
-.form .contact{
+.form .contact {
   display: flex;
   flex-direction: column;
   row-gap: 20px;
 }
 
-.right-1{
+.right-1 {
   background-color: white;
   border-radius: 8px;
   padding: 40px;
 }
-.contact input, .contact textarea{
-  background-color: rgb(199, 227, 227) ;
+.contact input,
+.contact textarea {
+  background-color: rgb(199, 227, 227);
   border: transparent;
   border-radius: 5px;
   padding: 10px;
   outline: none;
 }
 
-.right-1 button{
+.right-1 button {
   margin-top: 30px;
   padding: 10px;
   border-radius: 5px;
@@ -273,16 +329,44 @@
   color: white;
   letter-spacing: 2px;
 }
-.right-1 button:hover{
+.right-1 button:hover {
   background-color: rgb(117, 228, 117);
   color: black;
   border: transparent;
   cursor: pointer;
 }
-@media screen and (max-width:767px){
-  .form-input{
+@media screen and (max-width: 767px) {
+  .form-input {
     flex-direction: column;
     align-items: center;
     row-gap: 20px;
   }
+}
+
+/* FOOTER-SECTION */
+#footer {
+  background-color: black;
+}
+.footer-section {
+  text-align: center;
+  padding: 50px;
+}
+.icons i {
+  padding: 10px;
+  font-size: 20px;
+  color: white;
+  transition: all 1s;
+}
+.footer-section p {
+  font-size: 30px;
+  margin: 20px 0;
+  color: white;
+}
+.footer-section span {
+  color: green;
+}
+.icons i:hover {
+  color: green;
+  transform: scale(0.7);
+  cursor: pointer;
 }
