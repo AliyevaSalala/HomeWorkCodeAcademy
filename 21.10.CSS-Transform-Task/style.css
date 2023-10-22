@@ -276,72 +276,72 @@
 #section-five {
   background-color: rgb(199, 227, 227);
 }
+.left-1, .right-1{
+  width: 50%;
+}
 .form-input {
   display: flex;
-  padding: 80px;
+  justify-content: center;
+  align-items: center;
+  padding: 5.6rem;
 }
-.left-1,
-.right-1 {
-  width: 50%;
-}
-
-.left-1 i,
-.left-1 span {
-  color: green;
+.left-1 ul a i, .left-1 a{
   font-size: 26px;
-  padding: 10px;
+  color: green;
 }
-.address {
-  width: 50%;
-  line-height: 2;
+.left-1 ul li p{
+  font-size: 18px;
+  width: 200px;
+  margin: 10px;
 }
-.right-1 .form h2 {
-  text-align: center;
-  margin-bottom: 20px;
-}
-
-.form .contact {
-  display: flex;
-  flex-direction: column;
-  row-gap: 20px;
-}
-
-.right-1 {
+.right-1 { 
+  border-radius: 5px;
+  width: 300px;
+  border: 1px solid white;
   background-color: white;
-  border-radius: 8px;
-  padding: 40px;
 }
-.contact input,
-.contact textarea {
-  background-color: rgb(199, 227, 227);
+.right-1 h1{
+  color: black;
+  text-align: center;
+  margin: 10px;
+}
+.right-1 input{
+  width: 250px;
+  margin: 10px;
+  padding: 5px;
+  border-radius: 5px;
   border: transparent;
-  border-radius: 5px;
-  padding: 10px;
-  outline: none;
+  background-color: rgb(197, 231, 231);
 }
-
-.right-1 button {
-  margin-top: 30px;
-  padding: 10px;
+.right-1 form textarea{
+  width: 250px;
+  margin: 10px;
   border-radius: 5px;
-  width: 100%;
+  border: transparent;
+  background-color: rgb(197, 231, 231);
+}
+.right-1 form button{
+  width: 300px;
   background-color: green;
   color: white;
-  letter-spacing: 2px;
-}
-.right-1 button:hover {
-  background-color: rgb(117, 228, 117);
-  color: black;
-  border: transparent;
+  padding: 5px;
   cursor: pointer;
+  border-bottom-right-radius: 8px;
+  border-bottom-left-radius: 8px;
+  transition: all 1s;
+  border: transparent;
 }
-@media screen and (max-width: 767px) {
-  .form-input {
-    flex-direction: column;
-    align-items: center;
-    row-gap: 20px;
-  }
+.right-1 form button:hover{
+  background-color: rgb(61, 208, 61);
+
 }
+@media screen and (max-width:767px){
+.form-input{
+  flex-direction: column;
+  row-gap: 10px;
+}
+}
+
 
 /* FOOTER-SECTION */
 #footer {
