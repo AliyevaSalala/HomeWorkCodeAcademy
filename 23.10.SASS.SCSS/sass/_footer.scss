@@ -1,0 +1,58 @@
+footer{
+    background-color: $btn-color;
+    .content{
+        @include flexBox(space-between);
+        h1{
+            color: $color-brown;
+            margin: 20px 0;
+        }
+        .menu{
+        h3{
+            color: $primary-color;
+           padding: 10px 0;
+        }
+        nav{
+            ul{
+                li{
+                    a{
+                        color:$color-brown;
+                        line-height: 1.5;
+                    }
+                }
+            }
+        }
+        }
+        .icons {
+            margin: 20px 0;
+            i{
+                padding: 15px;
+                color: $color-white;
+                background-color: $primary-color;
+                border-radius: 50%;
+            }
+        }
+    
+    }
+    @media screen and (max-width:767px){
+        .content{
+            flex-direction: column;
+            align-items: center;
+            row-gap: 20px
+        }
+    }
+    .content-2{
+        @include flexBox(space-between);
+        margin-top: 20px;
+        position: relative;
+        ::before{
+            width: 500px;
+            height: 5px;
+            position: absolute;
+            background-color: $color-before;
+            bottom: -10px;
+            // border: 3px solid  #F3D1BF;
+        }
+     }
+ 
+
+}
