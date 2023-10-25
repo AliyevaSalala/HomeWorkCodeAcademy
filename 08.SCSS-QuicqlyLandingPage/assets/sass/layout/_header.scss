@@ -1,0 +1,39 @@
+header {
+  background-color: $primary-color;
+  padding: 2rem 0;
+  .header-section {
+    @include flexbox();
+    h4{
+      color: $color-white;
+    }
+    nav {
+      ul {
+        display: flex;
+        gap: 15px;
+        li {
+          a {
+            color: $color-white;
+          }
+        }
+      }
+    }
+    .header-button{
+       .sign-up{
+           @extend %primary-btn;
+       }
+       .login{
+           color: $color-white;
+           background-color: transparent;
+           border: none;
+           padding: 10px 16px;
+       }
+    }
+    @media screen and (max-width:767px){
+      nav{
+        ul{
+          display: none;
+        }
+      }
+    }
+   }
+  }

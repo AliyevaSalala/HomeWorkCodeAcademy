@@ -1,0 +1,305 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+h1 {
+  font-size: 50px;
+}
+
+h2 {
+  font-size: 40px;
+}
+
+h3 {
+  font-size: 32px;
+}
+
+h4 {
+  font-size: 24px;
+}
+
+h5 {
+  font-size: 18px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+@media screen and (max-width: 1200px) {
+  .container {
+    padding: 0 5%;
+  }
+}
+
+#home .section-one .herro-banner-left .herro-banner-button .learn-more, #home .section-one .herro-banner-left .herro-banner-button .sign-up, header .header-section .header-button .sign-up {
+  border-radius: 8px;
+  padding: 10px 16px;
+  color: #20484f;
+  background-color: #B8E4DA;
+  border: none;
+}
+
+header {
+  background-color: #20484f;
+  padding: 2rem 0;
+}
+header .header-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .header-section h4 {
+  color: #fff;
+}
+header .header-section nav ul {
+  display: flex;
+  gap: 15px;
+}
+header .header-section nav ul li a {
+  color: #fff;
+}
+header .header-section .header-button .login {
+  color: #fff;
+  background-color: transparent;
+  border: none;
+  padding: 10px 16px;
+}
+@media screen and (max-width: 767px) {
+  header .header-section nav ul {
+    display: none;
+  }
+}
+
+footer {
+  background-color: #072125;
+  padding: 3rem 0;
+}
+footer .footer .section-footer {
+  display: flex;
+}
+footer .footer .section-footer .footer-left {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+}
+footer .footer .section-footer .footer-left h3 {
+  color: #fff;
+}
+footer .footer .section-footer .footer-left .checkboks {
+  display: flex;
+  -moz-column-gap: 20px;
+       column-gap: 20px;
+}
+footer .footer .section-footer .footer-left .checkboks .checkboks-2 label {
+  color: #fff;
+}
+footer .footer .section-footer .footer-left .checkboks .input-button {
+  margin-top: 30px;
+  position: relative;
+  max-width: 380px;
+}
+footer .footer .section-footer .footer-left .checkboks .input-button input {
+  height: 48px;
+  width: 100%;
+  border-radius: 8px;
+  padding-left: 10px;
+  padding-right: 140px;
+  border: none;
+}
+footer .footer .section-footer .footer-left .checkboks .input-button button {
+  position: absolute;
+  right: 0;
+  border: none;
+  height: 48px;
+  width: 136px;
+  border-radius: 8px;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  background-color: #B8E4DA;
+}
+footer .footer .section-footer .footer-right {
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+footer .footer .section-footer .footer-right nav h4 {
+  color: #fff;
+  margin: 10px 0;
+}
+footer .footer .section-footer .footer-right nav ul li a {
+  color: #FAFAFA;
+  font-size: 14px;
+}
+footer .footer .quickly {
+  margin-top: 20px;
+}
+footer .footer .quickly h5 {
+  border-top: 2px solid #FAFAFA;
+  padding-top: 25px;
+  text-align: center;
+  color: #fff;
+}
+@media screen and (max-width: 767px) {
+  footer .footer .section-footer {
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+  }
+  footer .footer .footer-right {
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+
+#home .section-one {
+  padding: 3.5rem 0;
+}
+#home .section-one .herro-banner-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#home .section-one .herro-banner-left {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+#home .section-one .herro-banner-left h5 {
+  color: #20484f;
+}
+#home .section-one .herro-banner-left p {
+  font-size: 18px;
+  color: #20484f;
+}
+#home .section-one .herro-banner-left .herro-banner-button .sign-up {
+  color: #fff;
+  background-color: #20484f;
+}
+#home .section-one .herro-banner-left .herro-banner-button .learn-more {
+  background-color: #fff;
+}
+#home .section-one .herro-banner-roght {
+  width: 50%;
+}
+@media screen and (max-width: 767px) {
+  #home .section-one .herro-banner-section {
+    flex-direction: column-reverse;
+  }
+  #home .section-one .herro-banner-section .herro-banner-left h5 {
+    display: none;
+  }
+}
+#home .section-two {
+  padding: 3rem 0;
+  background-color: #FAFAFA;
+}
+#home .section-two .section-team .section-team-people {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+#home .section-two .section-team .section-team-people h2 {
+  max-width: 570px;
+  color: #072125;
+}
+#home .section-two .section-team .section-team-people p {
+  max-width: 450px;
+  color: #072125;
+  font-size: 16px;
+}
+#home .section-two .section-team .section-team-card {
+  padding: 2rem 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+}
+#home .section-two .section-team .section-team-card .card {
+  width: 30%;
+  text-align: center;
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 15px 0;
+}
+#home .section-two .section-team .section-team-card .card h4 {
+  margin: 10px 0;
+  color: #072125;
+}
+#home .section-two .section-team .section-team-card .card p {
+  margin: 10px 0;
+  color: #20484f;
+}
+#home .section-two .section-team .section-team-card .card i {
+  padding: 10px;
+  border: 1px solid #20484f;
+  border-radius: 50%;
+}
+@media screen and (max-width: 767px) {
+  #home .section-two .section-team-card {
+    flex-direction: column;
+    align-items: center;
+  }
+}/*# sourceMappingURL=style.css.map */

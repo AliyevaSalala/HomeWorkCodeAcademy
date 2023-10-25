@@ -1,0 +1,102 @@
+#home {
+  .section-one {
+    padding: 3.5rem 0;
+    .herro-banner-section {
+      @include flexbox(center);
+    }
+    .herro-banner-left {
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      h5 {
+        color: $primary-color;
+      }
+      p {
+        font-size: 18px;
+        color: $primary-color;
+      }
+      .herro-banner-button {
+        .sign-up {
+          @extend %primary-btn;
+          color: $color-white;
+          background-color: $primary-color;
+        }
+        .learn-more {
+          @extend %primary-btn;
+          background-color: $color-white;
+        }
+      }
+    }
+    .herro-banner-roght {
+      width: 50%;
+    }
+    @media screen and (max-width: 767px) {
+      .herro-banner-section {
+        flex-direction: column-reverse;
+        .herro-banner-left {
+          h5 {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+
+  .section-two {
+    padding: 3rem 0;
+    background-color: $color-wheat;
+    .section-team {
+      .section-team-people {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        h2{
+            max-width: 570px;
+            color: $color-dark;
+        }
+        p{
+            max-width: 450px;
+            color: $color-dark;
+            font-size: 16px;
+        }
+      }
+      .section-team-card{
+        padding: 2rem 0;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+        .card{
+            width: 30%;
+            text-align: center;
+           background-color: $color-white;
+           border-radius: 5px;
+           padding: 15px 0;
+         h4{
+            margin: 10px 0;
+            color: $color-dark;
+         }
+         p{
+            margin: 10px 0;
+            color: $primary-color;
+         }
+         i{
+            padding: 10px;
+            border: 1px solid $primary-color;
+            border-radius: 50%;
+
+         }
+        }
+      }
+    }
+   @media screen and (max-width:767px){
+    .section-team-card{
+      flex-direction: column;
+      align-items: center;
+    }
+   }
+  }
+}
