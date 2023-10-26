@@ -168,7 +168,6 @@ footer .footer .section-footer .footer-left .checkboks .checkboks-2 label {
   color: #fff;
 }
 footer .footer .section-footer .footer-left .checkboks .input-button {
-  margin-top: 30px;
   position: relative;
   max-width: 380px;
 }
@@ -246,6 +245,12 @@ footer .footer .quickly h5 {
 #home .section-one .herro-banner-left p {
   font-size: 18px;
   color: #20484f;
+}
+#home .section-one .herro-banner-left img {
+  position: absolute;
+  right: 10%;
+  bottom: 5%;
+  z-index: -1;
 }
 #home .section-one .herro-banner-left .herro-banner-button .sign-up {
   color: #fff;

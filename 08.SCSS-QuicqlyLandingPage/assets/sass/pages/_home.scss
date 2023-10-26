@@ -3,7 +3,6 @@
     padding: 3.5rem 0;
     .herro-banner-section {
       @include flexbox(center);
-     
     }
     .herro-banner-left {
       width: 50%;
@@ -11,17 +10,21 @@
       flex-direction: column;
       gap: 20px;
       position: relative;
-      h5 {
-        color: $primary-color;
+    
+        h5 {
+          color: $primary-color;
+        }
+        p {
+          font-size: 18px;
+          color: $primary-color;
+        }
+    
+      img {
+        position: absolute;
+        right: 10%;
+        bottom: 5%;
+        z-index: -1;
       }
-      p {
-        font-size: 18px;
-        color: $primary-color;
-      }
-      // .img{
-      //   position: absolute;
-      //  bottom: 10%
-      // }
 
       .herro-banner-button {
         .sign-up {
@@ -41,15 +44,15 @@
           background-color: $color-white;
         }
       }
-    
     }
-  
+
     .herro-banner-roght {
       width: 50%;
     }
     @media screen and (max-width: 767px) {
       .herro-banner-section {
         flex-direction: column-reverse;
+      
         .herro-banner-left {
           h5 {
             display: none;
@@ -57,8 +60,9 @@
         }
       }
     }
+    
+ 
   }
-
   .section-two {
     padding: 3rem 0;
     background-color: $color-wheat;
@@ -91,10 +95,10 @@
           background-color: $color-white;
           border-radius: 5px;
           padding: 15px 0;
-       
-          img{
+
+          img {
             transition: all 0.5s;
-            &:hover{
+            &:hover {
               transform: scale(1.1);
               opacity: 0.7;
               cursor: pointer;
@@ -113,7 +117,7 @@
             border: 1px solid $primary-color;
             border-radius: 50%;
             transition: all 0.5s;
-            &:hover{
+            &:hover {
               transform: scale(0.5);
               background-color: $primary-color;
             }
