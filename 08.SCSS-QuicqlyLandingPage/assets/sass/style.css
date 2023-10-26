@@ -223,18 +223,65 @@ footer .footer .quickly h5 {
   text-align: center;
   color: #fff;
 }
+footer .footer .input-button {
+  position: relative;
+  max-width: 380px;
+}
+footer .footer .input-button input {
+  height: 48px;
+  width: 280px;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+}
+footer .footer .input-button button {
+  position: absolute;
+  right: 0;
+  border: none;
+  height: 48px;
+  width: 136px;
+  border-radius: 8px;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  background-color: #B8E4DA;
+}
+
+.footer-right {
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer-right nav h4 {
+  color: #fff;
+  margin: 10px 0;
+}
+.footer-right nav ul li a {
+  color: #FAFAFA;
+  font-size: 14px;
+}
+
+.quickly {
+  margin-top: 20px;
+}
+.quickly h5 {
+  border-top: 2px solid #FAFAFA;
+  padding-top: 25px;
+  text-align: center;
+  color: #fff;
+}
+
 @media screen and (max-width: 767px) {
-  footer .footer .section-footer {
+  .section-footer {
     flex-direction: column;
     gap: 20px;
     align-items: center;
   }
-  footer .footer .footer-right {
+  .footer-right {
     flex-direction: column;
     gap: 20px;
   }
 }
-
 #home .section-one {
   padding: 3.5rem 0;
 }
@@ -256,6 +303,12 @@ footer .footer .quickly h5 {
 #home .section-one .herro-banner-left p {
   font-size: 18px;
   color: #20484f;
+}
+#home .section-one .herro-banner-left img {
+  position: absolute;
+  right: 10%;
+  bottom: 5%;
+  z-index: -1;
 }
 #home .section-one .herro-banner-left .herro-banner-button .sign-up {
   color: #fff;
