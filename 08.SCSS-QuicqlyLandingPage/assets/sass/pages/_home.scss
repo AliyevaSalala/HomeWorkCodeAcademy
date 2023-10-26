@@ -27,11 +27,12 @@
         .sign-up {
           @extend %primary-btn;
           color: $color-white;
+          border: 1px solid transparent;
           background-color: $primary-color;
           transition: all 0.5s;
           &:hover {
             background-color: transparent;
-            border: 1px solid $primary-color;
+            border-color: $primary-color;
             color: $primary-color;
           }
         }
@@ -108,14 +109,17 @@
             margin: 10px 0;
             color: $primary-color;
           }
-          i {
-            padding: 10px;
-            border: 1px solid $primary-color;
-            border-radius: 50%;
-            transition: all 0.5s;
-            &:hover{
-              transform: scale(0.5);
-              background-color: $primary-color;
+          a{
+            i {
+              padding: 10px;
+              color: black;
+              border: 1px solid $primary-color;
+              border-radius: 50%;
+              transition: all 0.5s;
+              &:hover{
+                transform: scale(0.5);
+                background-color: $primary-color;
+              }
             }
           }
         }

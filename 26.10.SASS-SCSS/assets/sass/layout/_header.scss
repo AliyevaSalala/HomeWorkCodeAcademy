@@ -1,0 +1,36 @@
+header{
+    background-color: $primary-color;
+   
+    .header-top{
+        padding: 20px;
+        @include flexbox();
+        nav{
+            ul{
+                display: flex;
+                gap: 0 60px;
+                li{
+                    a{
+                        color: $color-white;
+                       
+                    }
+                }
+            }
+        }
+        .header-button{
+            @extend %primary-btn
+        }
+    }
+    .header-bottom{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+        padding: 50px;
+        h1{
+            color: $color-white;
+        }
+        p{
+            color: $color-white;
+        }
+    }
+}

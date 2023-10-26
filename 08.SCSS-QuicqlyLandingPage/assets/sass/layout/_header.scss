@@ -9,7 +9,7 @@ header {
     nav {
       ul {
         display: flex;
-        gap: 15px;
+        gap: 40px;
         li {
           a {
             color: $color-white;
@@ -22,22 +22,24 @@ header {
            @extend %primary-btn;
            transition: all 0.5s;
            cursor: pointer;
+           border: 1px solid transparent;
            &:hover{
             background-color: transparent;
-            border: 1px solid $color-white;
             color: $color-white;
+            border-color: $color-wheat;
            }
        }
        .login{
            color: $color-white;
            background-color: transparent;
            border: none;
+           border: 1px solid transparent;
            padding: 10px 16px;
            border-radius: 5px;
            transition: all 0.5s;
            cursor: pointer;
            &:hover{
-            border: 1px solid $color-white;
+         border-color: $color-white;
            }
        }
     }
