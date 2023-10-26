@@ -174,11 +174,10 @@ footer .footer .section-footer .footer-left .checkboks .input-button {
 }
 footer .footer .section-footer .footer-left .checkboks .input-button input {
   height: 48px;
-  width: 100%;
+  width: 280px;
   border-radius: 8px;
-  padding-left: 10px;
-  padding-right: 140px;
   border: none;
+  outline: none;
 }
 footer .footer .section-footer .footer-left .checkboks .input-button button {
   position: absolute;
