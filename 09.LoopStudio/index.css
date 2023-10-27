@@ -23,6 +23,14 @@
   top: 50%;
   right: 25%;
 }
+
+@media screen and (max-width:767px){
+  .herro-banner-section{
+    position: static;
+    text-align: center;
+  }
+}
+
 .section-card {
   position: relative;
 }
@@ -37,6 +45,11 @@
 .section-card .image-2{
   position: absolute;
   bottom: 10%;
+}
+@media screen and (max-width:767px){
+  .section-h1{
+    text-align: center;
+  }
 }
 #footer {
   background-color: black;
