@@ -2,12 +2,8 @@
   margin: 0;
   box-sizing: border-box;
   list-style: none;
-  /* text-decoration: none; */
 }
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-}
+
 #header {
   background-image: url(".//image/backkground-url.jpeg");
   background-repeat: no-repeat;
@@ -15,10 +11,7 @@
   background-size: cover;
   padding: 3rem 0;
 }
-.header nav ul {
-  display: flex;
-  gap: 40px;
-}
+
 .header nav ul li a:hover{
   border-bottom: 2px solid white;
 }
@@ -37,17 +30,17 @@
     opacity: 0.7;
     cursor: pointer;
 }
-.section-card h1 {
+.section-card .image {
+  position: absolute;
+  bottom: 20%;
+}
+.section-card .image-2{
   position: absolute;
   bottom: 10%;
 }
 #footer {
   background-color: black;
   padding: 2.5rem 0;
-}
-.footer-section nav ul {
-  display: flex;
-  column-gap: 25px;
 }
 .footer-icons i{
     padding: 10px;
